@@ -10,6 +10,7 @@ class Bob{
      this.y=y;
      this.r=r;
      this.body=Bodies.circle(x,y,r,options)
+      World.add(world, this.body);
     }
 display(){
     var paperpos=this.body.position;
